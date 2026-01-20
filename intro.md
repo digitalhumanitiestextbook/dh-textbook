@@ -1,8 +1,5 @@
 ---
 title: 서문
-hide:
-  - authors
-  - affiliations
 ---
 
 # 환영합니다!

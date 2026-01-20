@@ -2,16 +2,28 @@
 title: MyST Markdown 표준 문법 가이드
 ---
 
+<!-- colab-button:start -->
+<div class="colab-button">
+  <a
+    href="https://colab.research.google.com/github/digitalhumanitiestextbook/dh-textbook/blob/main/notebooks/part9_infra/05_myst_syntax_guide.ipynb"
+    target="_blank"
+    rel="noopener"
+  >
+    Colab에서 실행하기
+  </a>
+</div>
+<!-- colab-button:end -->
+
 이 문서는 Jupyter Book의 표준 문법인 **MyST(Markedly Structured Text)**의 핵심 사용법을 정리한 교육용 문서입니다. 일반적인 마크다운 문법에 학술적인 글쓰기를 위한 기능(각주, 인용, 수식, 상호 참조 등)이 추가된 형태입니다.
 
 ## 1. 텍스트 강조 (Text Formatting)
 
 기본적인 텍스트 강조는 일반 마크다운과 동일합니다.
 
-* **굵게**: `**굵은 텍스트**` → **굵은 텍스트**
-* *기울임*: `*기울임 텍스트*` → *기울임 텍스트*
-* `인라인 코드`: `` `코드` `` → `코드`
-* ~~취소선~~: `~~취소선~~` → ~~취소선~~
+- **굵게**: `**굵은 텍스트**` → **굵은 텍스트**
+- _기울임_: `*기울임 텍스트*` → _기울임 텍스트_
+- `인라인 코드`: `` `코드` `` → `코드`
+- ~~취소선~~: `~~취소선~~` → ~~취소선~~
 
 ## 2. 블록 인용 및 경고창 (Admonitions)
 
@@ -66,9 +78,9 @@ title: MyST Markdown 표준 문법 가이드
 :::
 ```
 
-* `:name:`: 나중에 본문에서 이 그림을 참조할 때 사용하는 ID입니다.
-* `:width:`: 이미지의 너비를 지정합니다 (px 또는 %).
-* `:align:`: 정렬 방식 (left, center, right).
+- `:name:`: 나중에 본문에서 이 그림을 참조할 때 사용하는 ID입니다.
+- `:width:`: 이미지의 너비를 지정합니다 (px 또는 %).
+- `:align:`: 정렬 방식 (left, center, right).
 
 ## 4. 코드 블록 (Code Blocks)
 
@@ -96,10 +108,13 @@ def hello_world():
 학술적인 수식은 LaTeX 문법을 사용하여 표현합니다.
 
 ### 인라인 수식 (문장 중간)
+
 문장 중간에 $E = mc^2$ 처럼 수식을 넣으려면 `$` 기호를 사용합니다.
-* 입력: `$E = mc^2$`
+
+- 입력: `$E = mc^2$`
 
 ### 블록 수식 (별도 문단)
+
 수식을 가운데 정렬하여 크게 보여주려면 `$$` 또는 `{math}` 지시어를 사용합니다.
 
 ```md
@@ -123,22 +138,26 @@ x = \frac{1}{2} a t^2 + v_0 t + x_0
 문서 내의 다른 챕터, 그림, 수식 등을 링크할 때 사용합니다. 페이지 번호가 바뀌어도 링크가 유지되므로 매우 중요합니다.
 
 ### 섹션(제목) 참조하기
+
 참조하고 싶은 제목 바로 위에 라벨을 붙입니다.
 
 ```md
 (section-label)=
+
 ## 2. 데이터 분석 방법
 ```
 
 다른 곳에서 위 섹션을 링크하려면:
-* 입력: `2장 {ref}`section-label` 내용을 참고하세요.`
-* 출력: 2장 **2. 데이터 분석 방법** 내용을 참고하세요.
+
+- 입력: `2장 {ref}`section-label` 내용을 참고하세요.`
+- 출력: 2장 **2. 데이터 분석 방법** 내용을 참고하세요.
 
 ### 그림/수식 참조하기
+
 그림이나 수식에 `:name:` 또는 `:label:`을 붙였다면 `{ref}` 대신 `{numref}`를 써서 "그림 1", "식 2" 처럼 번호로 참조할 수 있습니다.
 
-* 입력: `{numref}`my-figure-label`을 보세요.`
-* 출력: **그림 1**을 보세요.
+- 입력: `{numref}`my-figure-label`을 보세요.`
+- 출력: **그림 1**을 보세요.
 
 ## 7. 각주 (Footnotes)
 
@@ -171,6 +190,6 @@ console.log("Hello JS");
 ---
 
 **더 자세한 내용 참고:**
-* [MyST 공식 문서 (영문)](https://mystmd.org/guide)
-* [Jupyter Book 갤러리](https://executablebooks.org/en/latest/gallery/)
 
+- [MyST 공식 문서 (영문)](https://mystmd.org/guide)
+- [Jupyter Book 갤러리](https://executablebooks.org/en/latest/gallery/)

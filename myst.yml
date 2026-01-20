@@ -9,9 +9,28 @@ project:
   #       family: "김"
   #     affiliations:
   #       - "한국학중앙연구원"
+  abstract: |
+    디지털 인문학 교과서.
 
-  # GitHub 배포 설정 (필수)
+  # GitHub 배포 설정
   github: "https://github.com/digitalhumanitiestextbook/dh-textbook"
+
+  # PDF export
+  exports:
+    - id: dh-textbook-pdf
+      format: typst
+      output: exports/dh-textbook.pdf
+      template: templates/plain_typst_book
+      fontstyle: "Noto Sans CJK KR"
+      fontsize: 10
+      linespacing: 1.25
+      show_ToC: true
+
+  # PDF 다운로드 항목으로 노출
+  downloads:
+    - id: dh-textbook-pdf
+      title: "PDF 다운로드"
+      filename: "dh-textbook.pdf"
 
   # 목차 구조 정의 (Myst v2 표준 스타일: project.toc 내부에 계층 구조 정의)
   toc:
@@ -81,6 +100,7 @@ project:
         - file: content/part9_infra/01_cli_linux.md
         - file: content/part9_infra/02_web_server_flask.md
         - file: content/part9_infra/03_git_github.md
+        - file: content/part9_infra/04_publish_environment.md
         - file: content/part9_infra/05_myst_syntax_guide.md
 
 site:
@@ -91,3 +111,4 @@ site:
     base_url: /dh-textbook
     # 챕터 번호 자동 부여 (1.1, 1.2 등)
     numbered_chapters: true
+    style: static/custom.css

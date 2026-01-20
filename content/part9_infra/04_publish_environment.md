@@ -2,6 +2,18 @@
 title: Jupyter Book(GitHub Actions)
 ---
 
+<!-- colab-button:start -->
+<div class="colab-button">
+  <a
+    href="https://colab.research.google.com/github/digitalhumanitiestextbook/dh-textbook/blob/main/notebooks/part9_infra/04_publish_environment.ipynb"
+    target="_blank"
+    rel="noopener"
+  >
+    Colab에서 실행하기
+  </a>
+</div>
+<!-- colab-button:end -->
+
 이 챕터에서는 로컬 컴퓨터에서 매번 빌드할 필요 없이, GitHub에 소스를 올리기만 하면 자동으로 웹사이트를 만들어 배포해주는 **GitHub Actions** 설정 방법을 다룹니다.
 
 특히 최신 **MyST 엔진(v2 이상)**을 사용할 때 자주 발생하는 경로 문제(`BASE_URL`), 실행 파일 오류(`command not found`), 그리고 사이트가 빈 화면으로 나오는 문제(Jekyll 충돌)를 방지하는 **표준 설정**을 안내합니다.
@@ -37,12 +49,12 @@ GitHub Actions가 배포를 수행할 수 있도록 권한을 열어주어야 �
 2. 왼쪽 사이드바에서 **Pages** 메뉴를 선택합니다.
 3. **Build and deployment** 섹션의 **Source** 항목을 `Deploy from a branch`에서 **`GitHub Actions`**로 변경합니다.
 
-:::{figure} https://docs.github.com/assets/cb-33924/images/help/pages/pages-source-setting-actions.png
+:::{figure} images/part9_04_fig1.png
 :align: center
 :width: 80%
 :alt: GitHub Pages Source 설정 화면
 
-Source를 반드시 **GitHub Actions**로 변경해야 합니다.
+GitHub Pages에서 **배포 소스를 GitHub Actions로 설정하는 화면**
 :::
 
 ## 3. 배포 스크립트 작성 (`deploy.yml`)
@@ -84,13 +96,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       # 2. Node.js 설치 (MyST 엔진 필수 런타임)
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       # 3. 도구 설치
       - name: Install dependencies

@@ -35,15 +35,49 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Set up Typst
+        uses: typst-community/setup-typst@v3
+
+      - name: Install system dependencies (fonts, fontconfig)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fontconfig fonts-noto-cjk
+
+      - name: Install D2Coding font (from repo)
+        run: |
+          if ls fonts/D2Coding* 1> /dev/null 2>&1; then
+            mkdir -p ~/.local/share/fonts
+            cp -v fonts/D2Coding* ~/.local/share/fonts/
+            fc-cache -f -v
+          else
+            echo "No D2Coding font files found in ./fonts (skip)"
+          fi
+
+      - name: Install mystmd & jupytext
+        run: |
+          npm install -g mystmd
+          pip install jupytext
+
       - name: Install dependencies
         run: |
           pip install jupyter-book
           npm install -g mystmd
 
+      - name: Build PDF exports
+        run: |
+          myst build --pdf
+
       - name: Build the book
         run: |
           export BASE_URL="/dh-textbook"
           myst build --html
+
+      - name: Copy exports into HTML build
+        run: |
+          if [ -d exports ]; then
+            mkdir -p _build/html/exports
+            cp -v exports/*.pdf _build/html/exports/ || true
+          fi
 
       # Github Page의 Jekyll(기본 정적 사이트 빌더) 규칙 미사용
       - name: Disable Jekyll
