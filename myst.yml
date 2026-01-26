@@ -96,12 +96,13 @@ project:
         - file: content/part7_analysis/03_sna_theory.md
         - file: content/part7_analysis/04_gis_spatial.md
 
-    # 9. [Part 8] AI
-    - title: Part 8. 인공지능과 인문학
+    # 9. [Part 8] 네트워크 분석
+    - title: Part 8. 네트워크 분석
       children:
-        - file: content/part8_ai/01_ai_paradigm.md
-        - file: content/part8_ai/02_deep_learning_basics.md
-        - file: content/part8_ai/03_gen_ai_llm.md
+        - file: content/part8_network/01_to_the_world_of_network.md
+          children:
+            - file: content/part8_network/01-1_what_is_network.md
+        - file: content/part8_network/02_elements_of_network.md
 
     # 10. [Part 9] 인프라 및 출판 (기존 파일 통합 위치)
     - title: Part 9. 연구 인프라와 출판
