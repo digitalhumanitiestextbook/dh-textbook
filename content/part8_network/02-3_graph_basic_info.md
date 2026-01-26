@@ -174,7 +174,7 @@ G.edges[("Monica", "Rachel")]["relationship"] = "Childhood Friend"
 > 1. G.number_of_nodes()는 4야.
 > 2. G.number_of_edges()는 4야.
 > 3. G.nodes(data=True)의 결과, 'David'라는 노드는 {'role': 'manager'} 속성을 가져.
-> 4. G.degree()의 결과, ('David', 3) 이라는 값이 포함돼 있어.
+> 4. `G.degree()`의 결과, ('David', 3) 이라는 값이 포함돼 있어.
 > 이 정보들을 종합해서 이 미지의 그래프 G가 어떤 모습일지, 그리고 'David'가 이 네트워크에서 어떤 역할을 할지 인문학적 상상력을 발휘해서 이야기를 만들어 설명해줘.`
 >
 > **인문학적 프롬프트:**
