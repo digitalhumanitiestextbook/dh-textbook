@@ -141,14 +141,6 @@ project:
             - file: content/part8_network/06-4_friends_visualization_drill.md
             - file: content/part8_network/06-5_lesson_of_hairball.md
 
-    # 10. [Part 9] 인프라 및 출판 (기존 파일 통합 위치)
-    - title: Part 9. 연구 인프라와 출판
-      children:
-        - file: content/part9_infra/01_cli_linux.md
-        - file: content/part9_infra/02_web_server_flask.md
-        - file: content/part9_infra/03_git_github.md
-        - file: content/part9_infra/04_publish_environment.md
-        - file: content/part9_infra/05_myst_syntax_guide.md
 
 site:
   template: book-theme
