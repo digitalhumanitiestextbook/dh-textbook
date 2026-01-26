@@ -119,6 +119,27 @@ project:
             - file: content/part8_network/03-3_defining_edge.md
             - file: content/part8_network/03-4_setting_weight.md
             - file: content/part8_network/03-5_data_to_networkx_format.md
+        - file: content/part8_network/04_friends_characters_network.md
+          children:
+            - file: content/part8_network/04-1_preparing_characters_network.md
+            - file: content/part8_network/04-2_make_graph_object.md
+            - file: content/part8_network/04-3_whole_basic_statistic.md
+            - file: content/part8_network/04-4_core_basic_statistic.md
+            - file: content/part8_network/04-5_compare_whole_core.md
+        - file: content/part8_network/05_interpret_centrality.md
+          children:
+            - file: content/part8_network/05-1_what_is_centrality.md
+            - file: content/part8_network/05-2_degree_centrality.md
+            - file: content/part8_network/05-3_betweenness_centrality.md
+            - file: content/part8_network/05-4_closeness_centrality.md
+            - file: content/part8_network/05-5_eigenvector_centrality.md
+        - file: content/part8_network/06_network_visualization.md
+          children:
+            - file: content/part8_network/06-1_importance_of_visualization.md
+            - file: content/part8_network/06-2_networkx_and_matplotlib.md
+            - file: content/part8_network/06-3_info_based_visualization.md
+            - file: content/part8_network/06-4_friends_visualization_drill.md
+            - file: content/part8_network/06-5_lesson_of_hairball.md
 
     # 10. [Part 9] 인프라 및 출판 (기존 파일 통합 위치)
     - title: Part 9. 연구 인프라와 출판
