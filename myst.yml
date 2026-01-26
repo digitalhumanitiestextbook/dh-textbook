@@ -109,6 +109,16 @@ project:
         - file: content/part8_network/02_networkx.md
           children:
             - file: content/part8_network/02-1_what_is_networkx.md
+            - file: content/part8_network/02-2_make_network_graph.md
+            - file: content/part8_network/02-3_graph_basic_info.md
+            - file: content/part8_network/02-4_visualization_with_matplotlib.md
+        - file: content/part8_network/03_data_compilation_for_friends.md
+          children:
+            - file: content/part8_network/03-1_philosophy_of_data_compilation.md
+            - file: content/part8_network/03-2_defining_node.md
+            - file: content/part8_network/03-3_defining_edge.md
+            - file: content/part8_network/03-4_setting_weight.md
+            - file: content/part8_network/03-5_data_to_networkx_format.md
 
     # 10. [Part 9] 인프라 및 출판 (기존 파일 통합 위치)
     - title: Part 9. 연구 인프라와 출판
