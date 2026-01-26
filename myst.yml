@@ -45,11 +45,14 @@ project:
         - file: content/part1_theory/03_critical_dh.md
 
     # 3. [Part 2] 컴퓨팅 원리
-    - title: Part 2. 컴퓨팅의 원형과 역사
+    - title: Part 2. 파이썬 프로그래밍
       children:
         - file: content/part2_computing/01_variable_and_data_type.md
-        - file: content/part2_computing/02_bit_and_memory.md
-        - file: content/part2_computing/03_network_web_history.md
+        - file: content/part2_computing/02_operator.md
+        - file: content/part2_computing/03_control_statement.md
+        - file: content/part2_computing/04_function.md
+        - file: content/part2_computing/05_import_library.md
+        - file: content/part2_computing/06_install_library.md
 
     # 4. [Part 3] 문자 인코딩
     - title: Part 3. 문자의 디지털 재현
