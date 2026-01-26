@@ -38,11 +38,14 @@ project:
     - file: intro.md
 
     # 2. [Part 1] 이론과 배경
-    - title: Part 1. 디지털 인문학의 지평
+    - title: Part 1. 디지털 인문학과의 첫 만남
       children:
-        - file: content/part1_theory/01_dh_history.md
-        - file: content/part1_theory/02_methodology_shift.md
-        - file: content/part1_theory/03_critical_dh.md
+        - file: content/part1_theory/01_orientation.md
+        - file: content/part1_theory/02_what_is_dh.md
+        - file: content/part1_theory/03_why_dh.md
+        - file: content/part1_theory/04_coding_with_AI.md
+        - file: content/part1_theory/05_google_colab.md
+        - file: content/part1_theory/06_colab_drill.md
 
     # 3. [Part 2] 파이썬 프로그래밍
     - title: Part 2. 파이썬 프로그래밍
