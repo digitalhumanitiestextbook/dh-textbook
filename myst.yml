@@ -47,7 +47,7 @@ project:
     # 3. [Part 2] 컴퓨팅 원리
     - title: Part 2. 컴퓨팅의 원형과 역사
       children:
-        - file: content/part2_computing/01_turing_von_neumann.md
+        - file: content/part2_computing/01_variable_and_data_type.md
         - file: content/part2_computing/02_bit_and_memory.md
         - file: content/part2_computing/03_network_web_history.md
 
