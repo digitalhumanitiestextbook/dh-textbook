@@ -102,7 +102,13 @@ project:
         - file: content/part8_network/01_to_the_world_of_network.md
           children:
             - file: content/part8_network/01-1_what_is_network.md
-        - file: content/part8_network/02_elements_of_network.md
+            - file: content/part8_network/01-2_elements_of_network.md
+            - file: content/part8_network/01-3_humanities_and_network.md
+            - file: content/part8_network/01-4_network_types.md
+            - file: content/part8_network/01-5_friends_and_network.md
+        - file: content/part8_network/02_networkx.md
+          children:
+            - file: content/part8_network/02-1_what_is_networkx.md
 
     # 10. [Part 9] 인프라 및 출판 (기존 파일 통합 위치)
     - title: Part 9. 연구 인프라와 출판
