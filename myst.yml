@@ -58,7 +58,7 @@ project:
         - file: content/part2_python/06_install_library.md
 
     # 4. [Part 3] 문자 인코딩
-    - title: Part 3. 문자의 디지털 재현
+    - title: Part 3. AI Pair Programming(보완필요)
       children:
         - file: content/part3_encoding/01_ascii_history.md
         - file: content/part3_encoding/02_korean_encoding.md
@@ -75,7 +75,7 @@ project:
         - file: content/part4_preprocessing/06_regex.md
 
     # 6. [Part 5] 구조적 데이터
-    - title: Part 5. 구조적 데이터와 데이터베이스
+    - title: Part 5. 전통적인 자연어분석(보완필요)
       children:
         - file: content/part5_data/01_tabular_data.md
         - file: content/part5_data/02_rdb_concept.md
@@ -83,13 +83,13 @@ project:
         - file: content/part5_data/04_xml_tei.md
 
     # 7. [Part 6] 의미망
-    - title: Part 6. 의미와 연결
+    - title: Part 6. Word/Text Embedding(보완필요)
       children:
         - file: content/part6_rdf/01_semantic_web.md
         - file: content/part6_rdf/02_ontology_design.md
 
     # 8. [Part 7] 분석 방법론
-    - title: Part 7. 데이터 분석 방법론
+    - title: Part 7. Text Classification(보완필요)
       children:
         - file: content/part7_analysis/01_text_mining_flow.md
         - file: content/part7_analysis/02_topic_modeling.md
@@ -141,14 +141,6 @@ project:
             - file: content/part8_network/06-4_friends_visualization_drill.md
             - file: content/part8_network/06-5_lesson_of_hairball.md
 
-    # 10. [Part 9] 인프라 및 출판 (기존 파일 통합 위치)
-    - title: Part 9. 연구 인프라와 출판
-      children:
-        - file: content/part9_infra/01_cli_linux.md
-        - file: content/part9_infra/02_web_server_flask.md
-        - file: content/part9_infra/03_git_github.md
-        - file: content/part9_infra/04_publish_environment.md
-        - file: content/part9_infra/05_myst_syntax_guide.md
 
 site:
   template: book-theme
