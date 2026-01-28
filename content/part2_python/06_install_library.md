@@ -16,7 +16,7 @@ title: 라이브러리 설치
 
 ## 라이브러리 설치
 
-파이썬에는 `math`, `random`처럼 기본적으로 포함되어 바로 `import`해서 쓸 수 있는 **내장 라이브러리(Built-in Library)**도 있지만, 훨씬 더 많은 종류의 강력한 기능들을 담은 **외부 라이브러리(External Library)**들이 존재합니다. 
+파이썬에는 `math`, `random`처럼 기본적으로 포함되어 바로 `import`해서 쓸 수 있는 '**내장 라이브러리(Built-in Library)**'도 있지만, 훨씬 더 많은 종류의 강력한 기능들을 담은 '**외부 라이브러리(External Library)**'들이 존재합니다. 
 
 특히 인문학 연구, 그중에서도 텍스트 데이터를 다룰 때는 자연어 처리(Natural Language Processing, NLP) 라이브러리가 매우 중요합니다. 대표적으로 영어 텍스트 분석에 널리 쓰이는 `nltk`와 한국어 분석에 유용한 `konlpy`가 있습니다.
 
